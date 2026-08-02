@@ -6,7 +6,6 @@ import jwt from "jsonwebtoken";
 import { ObjectId } from "mongodb";
 import { getSurveyCollection, getAdminUsersCollection } from "./db.js";
 
-
 dotenv.config();
 
 const app = express();
@@ -466,4 +465,5 @@ if (process.env.VERCEL !== "1") {
     console.log(`Server running on port ${PORT}`);
   });
 }
+
 export default app;
