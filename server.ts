@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import { ObjectId } from "mongodb";
-import { getSurveyCollection, getAdminUsersCollection } from "./db";
+import { getSurveyCollection, getAdminUsersCollection } from "./db.js";
 import { BHOLA_UPAZILAS, SurveyData, AdminUser } from "./types";
 
 dotenv.config();
