@@ -13,7 +13,12 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ limit: "10mb" }));
-
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Bhola Family Card Survey API is running.",
+  });
+});
 const JWT_SECRET =
   process.env.JWT_SECRET || "bhola_family_card_survey_jwt_secret_2026";
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
