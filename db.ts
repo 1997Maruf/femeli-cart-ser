@@ -1,5 +1,5 @@
 import { MongoClient, Db, Collection } from 'mongodb';
-import { SurveyData, AdminUser } from './types';
+import { SurveyData, AdminUser } from "./types.js";
 
 let cachedClient: MongoClient | null = null;
 let cachedDb: Db | null = null;
